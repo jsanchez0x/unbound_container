@@ -1,2 +1,2 @@
-# outbound_container
+# unbound_container
 Recursive DNS container
