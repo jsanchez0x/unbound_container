@@ -8,7 +8,7 @@ Simple implementation of [unbound](https://www.nlnetlabs.nl/projects/unbound/abo
 ## Build
 ```bash
 git clone https://github.com/jsanchez0x/unbound_container.git
-docker build --rm --tag jsanchez0x/unbound:latest unbound_container
+docker build --rm --tag jsanchez0x/unbound_container:latest unbound_container
 ```
 
 ## Run
@@ -18,7 +18,7 @@ docker run -d \
     -p 5335:5335/tcp -p 5335:5335/udp \
     --net pihole-network --ip 172.18.0.4 \
     --restart=unless-stopped \
-    jsanchez0x/unbound:latest
+    jsanchez0x/unbound_container:latest
 ```
 
 ## Maintenance
