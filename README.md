@@ -2,8 +2,9 @@
 Simple implementation of [unbound](https://www.nlnetlabs.nl/projects/unbound/about/) to work with [Pi-Hole](https://pi-hole.net/). Both in separate Docker containers.
 
 ## Prerequisites
-- Get the name of the network where the Pi-Hole container is located (for example pihole-network).
-- And set an unused IP of this network (for example 172.18.0.4).
+If the Pi-hole container is running on a network other than the default. If not, this is not necessary.
+- Get the name of the network where the Pi-Hole container is located.
+- And set an unused IP of this network.
 
 ## Build
 ```bash
@@ -12,6 +13,16 @@ docker build --rm --tag jsanchez0x/unbound_container:latest unbound_container
 ```
 
 ## Run
+```bash
+docker run -d \
+    --name unbound \
+    -p 5335:5335/tcp -p 5335:5335/udp \
+    --restart=unless-stopped \
+    jsanchez0x/unbound_container:latest
+```
+
+### With custom network
+Assuming that the network name is called *pihole-network* and the IP *172.18.0.4* is not used.
 ```bash
 docker run -d \
     --name unbound \
