@@ -1,8 +1,8 @@
 # unbound_container
-Recursive DNS container
+Implementación simple de [unbound](https://www.nlnetlabs.nl/projects/unbound/about/). para funcionar con [Pi-Hole](https://pi-hole.net/).
 
 ## Prerequisites
-- Get the name of the network where the Pi-Hole container is located (for example pihole-network). 
+- Get the name of the network where the Pi-Hole container is located (for example pihole-network).
 - And set an unused IP of this network (for example 172.18.0.4).
 
 ## Build
