@@ -1,4 +1,4 @@
-# unbound_container
+# unbound_container [![Docker Image CI](https://github.com/jsanchez0x/unbound_container/actions/workflows/docker-image.yml/badge.svg)](https://github.com/jsanchez0x/unbound_container/actions/workflows/docker-image.yml) [![Generic badge](https://img.shields.io/badge/Docker-Hub-blue.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/jsanchez0x/unbound_container)
 Implementación simple de [unbound](https://www.nlnetlabs.nl/projects/unbound/about/). para funcionar con [Pi-Hole](https://pi-hole.net/).
 
 ## Prerequisites
