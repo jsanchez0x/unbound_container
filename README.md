@@ -18,6 +18,7 @@ docker run -d \
     --name unbound \
     -p 5335:5335/tcp -p 5335:5335/udp \
     --restart=unless-stopped \
+    --cap-add=NET_ADMIN \
     jsanchez0x/unbound_container:latest
 ```
 
