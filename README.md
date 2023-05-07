@@ -30,6 +30,7 @@ docker run -d \
     -p 5335:5335/tcp -p 5335:5335/udp \
     --net pihole-network --ip 172.18.0.4 \
     --restart=unless-stopped \
+    --cap-add=NET_ADMIN \
     jsanchez0x/unbound_container:latest
 ```
 
